@@ -29,23 +29,44 @@ let submit = document.getElementById('contactForm')
     submit.addEventListener('submit',(e)=>{
         e.preventDefault()
         if(inputnombre.value === '' || inputnombre.value === null || inputnombre.value === 'undefined') {
-            alert('Por favor completa el campo Nombre, e inténtalo nuevamente.')
+            Swal.fire({
+                icon: 'error',
+                title: 'Queremos saber como te llamas :D',
+                text: 'Por favor completa el campo Nombre, e inténtalo nuevamente.',
+                })
         }
         
         else if(inputmail.value === '' || inputmail.value === null || inputmail.value === 'undefined') {
-            alert('Por favor completa tu e-mail, e inténtalo nuevamente.')
+            Swal.fire({
+                icon: 'error',
+                title: 'Sigamos en contacto!',
+                text: 'Por favor completa tu e-mail, e inténtalo nuevamente.',
+                })
         }
 
         else if(inputtel.value === '' || inputtel.value === null || inputtel.value === 'undefined') {
-            alert('Por favor completa tu teléfono, e inténtalo nuevamente.')
+            Swal.fire({
+                icon: 'error',
+                title: 'Sigamos en contacto!',
+                text: 'Por favor completa tu teléfono, e inténtalo nuevamente.',
+                })
         }
 
         else if(inputmsg.value === '' || inputmsg.value === null || inputmsg.value === 'undefined') {
-            alert('Por favor escribe un mensaje, e inténtalo nuevamente.')
+            Swal.fire({
+                icon: 'error',
+                title: 'Queremos conocer tu opinión!',
+                text: 'Por favor escribe un mensaje, e inténtalo nuevamente.',
+                })
         }
 
         else (
-            alert(inputnombre.value + ', se guardaron tus datos! A la brevedad te contactaremos.')
+            Swal.fire(
+                'Muchas gracias!',
+                'Ya registramos tus datos, y a la brevedad nos comunicaremos.<br>Que tengas un buen día! :D',
+                'success'
+                )
+            // alert(inputnombre.value + ', se guardaron tus datos! A la brevedad te contactaremos.')
             )
         }
     )
