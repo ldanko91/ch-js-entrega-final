@@ -315,6 +315,9 @@
                                     type="submit">Listo!</button></div>
                         </form>
                     </div>
+
+                    <div class="d-grid"><button class="btn btn-primary" id="verData"
+                        type="submit">Ver datos almacenados</button></div>
                 </div>
             </div>
         </section>
@@ -348,7 +351,29 @@
 
     <!-- <script src="js/interactHTML.js"></script> -->
     
-
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC03OoyqVQjA_AZPU6Qv5Ce0KG-K7a3ME8",
+          authDomain: "casa-danko-api.firebaseapp.com",
+          projectId: "casa-danko-api",
+          storageBucket: "casa-danko-api.appspot.com",
+          messagingSenderId: "1062670865262",
+          appId: "1:1062670865262:web:11f2f8d39f9f993e91a77f",
+          measurementId: "G-JRHDDXH18T"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
     
 </body>
 
