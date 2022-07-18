@@ -4,27 +4,26 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description"
-        content="Casa Danko - Casa de sanitarios, griferías, amoblamientos para baños y cocinas, materiales sanitarios, instalaciones en general, ferretería y mucho más!">
+    <meta name="description" content="Casa Danko - Casa de sanitarios, griferías, amoblamientos para baños y cocinas, materiales sanitarios, instalaciones en general, ferretería y mucho más!">
     <meta name="keywords" content="sanitarios, sanitario, griferias, griferia, baños, banos, amoblamientos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lato&display=swap" rel="stylesheet">
     <title>Casa Danko - Sanitarios & Amoblamientos</title>
-    <link rel="icon" type="image/x-icon" href="../assets/logo.jpg" />
+    <link rel="icon" type="image/x-icon" href="../assets/logo.jpg"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="../css/styles.css" rel="stylesheet" />
-    <link href="../css/estilos.css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="../css/styles.css" rel="stylesheet"/>
+    <link href="../css/estilos.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/estilo.css">
-    <script src="../js/cotizador.js"></script>
-    <script src="../js/interact2HTML.js"></script>
+    <script src="../js/back.js"></script>
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger" id="navbar">
         <div class="container px-5 py-5 cont-nav">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/logo.jpg" alt="CASA DANKO"
-                    class="logo-navbar"></a>
+            <a class="navbar-brand" href="index.html"><img src="../assets/logo.jpg" alt="CASA DANKO" class="logo-navbar"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -33,20 +32,22 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 drop">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
-
+                    
+                    <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Salir del back</a></li>
+                    
                 </ul>
             </div>
 
-            <div class="social-header">
-                <a href="https://www.instagram.com/casadankook/?hl=es"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="50" height="50" fill="currentColor" class="bi bi-instagram" viewBox="0 0 20 20">
+            <div class="social-header" id="social-header">
+                <a href="https://www.instagram.com/casadankook/?hl=es"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" fill="currentColor" class="bi bi-instagram" viewBox="0 0 20 20">
                         <path
                             d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                     </svg></a>
                 <a href="https://es-la.facebook.com/pages/category/Hardware-Store/Casa-Danko-161410643908740/"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                        class="bi bi-facebook" viewBox="0 0 20 20">
+                        xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook"
+                        viewBox="0 0 20 20">
                         <path
                             d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                     </svg></a>
@@ -62,17 +63,13 @@
     </nav>
     <nav class="d-flex flex-row-reverse navbar navbar-expand-lg navbar-dark bg-danger" id="navbar3">
     </nav>
-
+    
     <header class="bg-dark bg-opacity-25 py-5 portada" id="header">
-        <div class="container px-5 bg-danger bg-opacity-75">
+         <div class="container px-5 bg-danger bg-opacity-75">
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center my-5" id="saludos">
-                        <h1 class="display-7 fw-bolder text-white mb-2">Cotizá online los productos que necesitás!</h1>
-
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="../index.html">Volver al home</a>
-                        </div>
+                        <h1 class="display-7 fw-bolder text-white mb-2" id="bienvenida-back">Bienvenido al back-office de Casa Danko!</h1>
                     </div>
                 </div>
             </div>
@@ -80,97 +77,64 @@
     </header>
 
     <main class="cuerpo">
-        <section class="bg-light py-5" id="cotizadorol">
+        <section class="bg-light py-5" id="clientes">
             <div class="container px-5 my-5 px-5">
                 <div class="text-center mb-5">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-bag-check-fill"></i>
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i>
                     </div>
-                    <h2 class="fw-bolder">Completa el formulario con los artículos</h2>
-                    <a href="#todosprods">
-                        <p class="lead mb-0">Consultar rubros y productos</p>
-                    </a>
+                    <h2 class="fw-bolder">Base de clientes</h2>
+                    <p class="lead mb-0">Desde aquí podrás acceder a la base de clientes que nos contactaron.<br>Por favor, una vez que contactes al cliente, dejalo marcado como "contactado".</p>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
-
-                        <form id="cotizadorForm" data-sb-form-api-token="API_TOKEN">
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="rubrocot" type="text" placeholder="Ingresa el rubro..."
-                                    data-sb-validations="required" />
-                                <label for="rubrocot">Rubro</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Es necesario que
-                                    completes el rubro</div>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="idcot" type="text" placeholder="Ingresa el id..."
-                                    data-sb-validations="required" />
-                                <label for="idcot">ID de producto</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Es necesario que
-                                    completes el id</div>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="cantcot" type="number"
-                                    placeholder="Ingresa la cantidad..." data-sb-validations="required" />
-                                <label for="cantocot">Cantidad</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Es necesario que
-                                    completes la cantidad</div>
-                            </div>
-
+    
+                        <form id="clientesForm" data-sb-form-api-token="API_TOKEN">
+                            <div><h2>Ver todos los contactos</h2></div>
+                            <div><h4 id="todosCtes">Tabla de clientes</h4></div>
+                            <div><ul id="listaejemplo"></ul></div>
                             <div>
-                                <ul id="listaitems">
-                                </ul>
+                                <table class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>NOMBRE</th>
+                                            <th>MAIL</th>
+                                            <th>TELEFONO</th>
+                                            <th>CONTACTADO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tctestab"></tbody>
+                                </table>
                             </div>
-
-                            <div class="d-grid"><button class="btn btn-primary" id="btnagregar" type="submit">Añadir a
-                                    cotización!</button></div>
-
-                            <div id="totalcot"></div>
+                            <div class="d-grid"><button class="btn btn-primary" id="verTCtes"
+                                type="submit">Ver clientes</button></div>
+                                
+                                <h3 class="p-3">Marcar cliente como "contactado"</h3>
+                                <h4 class="p-2">Ingresa el id del cliente y cliquea el botón</h4>
+                                <div class="form-floating mb-3 p-3" id="contactadoOk">
+                                    <input class="form-control" id="idcontactado" type="text"/>
+                                    <label for="name">ID cliente</label>
+                                </div>
+                                <div class="d-grid"><button class="btn btn-primary" id="contactadobtn"
+                                    type="submit">Contactado!</button></div>
+                            
+                                    <h3 class="p-3">Eliminar cliente de la base</h3>
+                                    <h4 class="p-2">ATENCIÓN! con esta herramienta eliminarás el contacto definitivamente</h4>
+                                    <div class="form-floating mb-3 p-3" id="eliminarID">
+                                        
+                                        <input class="form-control" id="ideliminado" type="text"/>
+                                        <label for="name">ID cliente</label>
+                                    </div>
+                                    <div class="d-grid"><button class="btn btn-primary" id="eliminadobtn"
+                                        type="submit">Eliminar contacto</button></div>
+                            
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
-
-        <section class="bg-light py-5" id="todosprods">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-6">
-                    <div>
-                        <h2>Ver todos los productos</h2>
-                    </div>
-                    <div>
-                        <h4 id="todosCtes">Tabla de productos</h4>
-                    </div>
-                    <div>
-                        <ul id="listaejemplo"></ul>
-                    </div>
-                    <div>
-                        <table class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
-                            <thead>
-                                <tr>
-                                    <th>RUBRO</th>
-                                    <th>ID</th>
-                                    <th>NOMBRE</th>
-                                    <th>PRECIO</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tprodtab"></tbody>
-                        </table>
-                    </div>
-                    <div class="d-grid"><button class="btn btn-primary" id="verTProds" type="submit">Ver
-                            productos</button></div>
-                </div>
-        </section>
-
-        <section class="py-5 border-bottom row" id="cotizacion">
-            <div id="tarjetasCoti"></div>
-
-
-        </section>
-
-
+    
+        
     </main>
 
     <footer class="py-5 bg-dark">
@@ -199,6 +163,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
 
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyC03OoyqVQjA_AZPU6Qv5Ce0KG-K7a3ME8",
+            authDomain: "casa-danko-api.firebaseapp.com",
+            projectId: "casa-danko-api",
+            storageBucket: "casa-danko-api.appspot.com",
+            messagingSenderId: "1062670865262",
+            appId: "1:1062670865262:web:11f2f8d39f9f993e91a77f",
+            measurementId: "G-JRHDDXH18T"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
 </body>
+
 </html>

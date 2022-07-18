@@ -74,17 +74,17 @@ let submit = document.getElementById('contactForm')
         }
     )
 
-    submit.addEventListener('submit',(e)=>{
-        console.log(e.target[0].value,e.target[1].value,e.target[2].value)
-        fetch(URL+`Clientes.json`,{
-        method:'POST',
-        body:JSON.stringify({nombre:e.target[0].value,mail:e.target[1].value,telefono:e.target[2].value}),
-        Headers: {'Content-type':'application/json;charset=UTF-8'},
+    submit.addEventListener('submit', (e) => {
+        console.log(e.target[0].value, e.target[1].value, e.target[2].value)
+        fetch(URL + `Clientes.json`, {
+            method: 'POST',
+            body: JSON.stringify({ nombre: e.target[0].value, mail: e.target[1].value, telefono: e.target[2].value }),
+            Headers: { 'Content-type': 'application/json;charset=UTF-8' },
         })
-        .then((resp)=>resp.json())
-        .then((data)=>contactForm.innerHTML=`Tu registro se completo bajo el ID: ${data.name}`)
+            .then((resp) => resp.json())
+            .then((data) => contactForm.innerHTML = `Tu registro se completo bajo el ID: ${data.name}`)
     })
-   
+
 
 
 }, false);

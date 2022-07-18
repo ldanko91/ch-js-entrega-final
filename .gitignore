@@ -1,2 +1,4 @@
 node_modules
-node_modules/
+proyectos-ant
+package-lock.json
+package.json
